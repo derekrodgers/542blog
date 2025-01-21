@@ -11,14 +11,14 @@
     "href": "posts/ggplot2-tutorial/index.html",
     "title": "Tutorial: Simple Plots in R With {ggplot2}",
     "section": "",
-    "text": "In this tutorial, we’ll explore how to create basic plots in R using the powerful ggplot2 package. We’ll start by generating a dataset, then we’ll create and explain some boxplots, violin plots, a a simple scatterplot, and then we’ll enhance the scatterplot with a regression line and confidence intervals."
+    "text": "In this tutorial, we’ll explore how to create basic plots in R using the powerful ggplot2 package. We’ll start by generating a dataset, then we’ll create and explain some boxplots, violin plots, a simple scatterplot, and then we’ll enhance the scatterplot with a regression line and confidence intervals."
   },
   {
     "objectID": "posts/ggplot2-tutorial/index.html#introduction",
     "href": "posts/ggplot2-tutorial/index.html#introduction",
     "title": "Tutorial: Simple Plots in R With {ggplot2}",
     "section": "",
-    "text": "In this tutorial, we’ll explore how to create basic plots in R using the powerful ggplot2 package. We’ll start by generating a dataset, then we’ll create and explain some boxplots, violin plots, a a simple scatterplot, and then we’ll enhance the scatterplot with a regression line and confidence intervals."
+    "text": "In this tutorial, we’ll explore how to create basic plots in R using the powerful ggplot2 package. We’ll start by generating a dataset, then we’ll create and explain some boxplots, violin plots, a simple scatterplot, and then we’ll enhance the scatterplot with a regression line and confidence intervals."
   },
   {
     "objectID": "posts/ggplot2-tutorial/index.html#generating-a-correlated-dataset",
@@ -53,14 +53,14 @@
     "href": "posts/ggplot2-tutorial/index.html#including-a-confidence-interval",
     "title": "Tutorial: Simple Plots in R With {ggplot2}",
     "section": "Including a Confidence Interval",
-    "text": "Including a Confidence Interval\nFinally, we enhance the plot by including a 95% confidence interval around the regression line. This provides more context about the variability in the predictions.\n\n# Scatterplot with regression line and confidence interval\nggplot(data, aes(x = X, y = Y)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = TRUE, fill = \"red\", color = \"blue\") +\n  labs(\n    title = \"Scatterplot with Regression Line and Confidence Interval\",\n    x = \"X Variable\",\n    y = \"Y Variable\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nScatterplot with a linear regression line and confidence interval.\n\n\n\n\nCode explanation:\n\nggplot(data, aes(x = X, y = Y)): Initializes the plot, mapping X to the x-axis and Y to the y-axis.\ngeom_point(): Adds points for the scatterplot, showing individual observations.\ngeom_smooth(method = \"lm\", se = TRUE, level = 0.95, fill = \"lightblue\", color = \"blue\", alpha = 0.3, linetype = \"solid\"): Adds a regression line and an error (confidence interval) band.\n\nmethod = \"lm\": Uses linear regression to compute the regression line.\nse = TRUE: Displays the confidence interval band around the regression line.\nlevel = 0.95: Sets the confidence level for the error band to 95%.\nfill = \"lightblue\": Colors the confidence interval band light blue.\ncolor = \"blue\": Colors the regression line blue.\nalpha = 0.3: Makes the confidence interval band slightly transparent.\nlinetype = \"solid\": Specifies a solid line style for the regression line.\n\nlabs(): Customizes the plot labels:\n\ntitle: Indicates the plot includes a regression line with confidence intervals.\nx: Labels the x-axis as “X Variable”.\ny: Labels the y-axis as “Y Variable”."
+    "text": "Including a Confidence Interval\nFinally, we enhance the plot by including a 95% confidence interval around the regression line. This provides more context about the variability in the predictions.\n\n# Scatterplot with regression line and confidence interval\nggplot(data, aes(x = X, y = Y)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = TRUE, fill = \"red\", color = \"blue\") +\n  labs(\n    title = \"Scatterplot with Regression Line and Confidence Interval\",\n    x = \"X Variable\",\n    y = \"Y Variable\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nScatterplot with a linear regression line and confidence interval.\n\n\n\n\nCode explanation:\n\nggplot(data, aes(x = X, y = Y)): Initializes the plot, mapping X to the x-axis and Y to the y-axis.\ngeom_point(): Adds points for the scatterplot, showing individual observations.\ngeom_smooth(method = \"lm\", se = TRUE, level = 0.95, fill = \"lightblue\", color = \"blue\", alpha = 0.3, linetype = \"solid\"): Adds a regression line and an error (confidence interval) band.\n\nmethod = \"lm\": Uses linear regression to compute the regression line.\nse = TRUE: Displays the confidence interval band around the regression line.\nlevel = 0.95: Sets the confidence level for the error band to 95%.\nfill = \"red\": Colors the confidence interval band red.\ncolor = \"blue\": Colors the regression line blue.\nalpha = 0.3: Makes the confidence interval band slightly transparent.\nlinetype = \"solid\": Specifies a solid line style for the regression line.\n\nlabs(): Customizes the plot labels:\n\ntitle: Indicates the plot includes a regression line with confidence intervals.\nx: Labels the x-axis as “X Variable”.\ny: Labels the y-axis as “Y Variable”."
   },
   {
     "objectID": "posts/ggplot2-tutorial/index.html#conclusion",
     "href": "posts/ggplot2-tutorial/index.html#conclusion",
     "title": "Tutorial: Simple Plots in R With {ggplot2}",
     "section": "Conclusion",
-    "text": "Conclusion\nIn this tutorial, we demonstrated how to generate a dataset, create a scatterplot, and enhance it with a regression line and confidence intervals using ggplot2. These basic tools can be the foundation for much more complex data visualization in R."
+    "text": "Conclusion\nIn this tutorial, we demonstrated some basic plots you can create with ggplot2, a powerful visualization package for R. We saw how we can use R to generate an artificial dataset, then visualize this dataset using boxplots, violin plots, and a scatterplot. Finally, we leanred how enhance our scatterplot with a regression line and confidence intervals. Although these plots are quite basic, the code patterns that underlie them are foundational to creating plots using ggplot2 and are a great foundation for much more complex data visualization in R."
   },
   {
     "objectID": "index.html",

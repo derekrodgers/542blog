@@ -1,13 +1,13 @@
 ---
 title: "Tutorial: Simple Plots in R With {ggplot2}"
 author: "Derek Rodgers"
-date: "2025-01-16"
+date: "2025-01-18"
 categories: [analysis]
 ---
 
 ## Introduction
 
-In this tutorial, we'll explore how to create basic plots in R using the powerful `ggplot2` package. We'll start by  generating a dataset, then we'll create and explain some boxplots, violin plots, a a simple scatterplot, and then we'll enhance the scatterplot with a regression line and confidence intervals.
+In this tutorial, we'll explore how to create basic plots in R using the powerful `ggplot2` package. We'll start by  generating a dataset, then we'll create and explain some boxplots, violin plots, a simple scatterplot, and then we'll enhance the scatterplot with a regression line and confidence intervals.
 
 ## Generating a Correlated Dataset
 
@@ -240,7 +240,7 @@ Code explanation:
   - `method = "lm"`: Uses linear regression to compute the regression line.
   - `se = TRUE`: Displays the confidence interval band around the regression line.
   - `level = 0.95`: Sets the confidence level for the error band to 95%.
-  - `fill = "lightblue"`: Colors the confidence interval band light blue.
+  - `fill = "red"`: Colors the confidence interval band red.
   - `color = "blue"`: Colors the regression line blue.
   - `alpha = 0.3`: Makes the confidence interval band slightly transparent.
   - `linetype = "solid"`: Specifies a solid line style for the regression line.
@@ -251,4 +251,4 @@ Code explanation:
 
 ## Conclusion
 
-In this tutorial, we demonstrated how to generate a dataset, create a scatterplot, and enhance it with a regression line and confidence intervals using `ggplot2`. These basic tools can be the foundation for much more complex data visualization in R.
+In this tutorial, we demonstrated some basic plots you can create with `ggplot2`, a powerful visualization package for R. We saw how we can use R to generate an artificial dataset, then visualize this dataset using boxplots, violin plots, and a scatterplot. Finally, we leanred how enhance our scatterplot with a regression line and confidence intervals. Although these plots are quite basic, the code patterns that underlie them are foundational to creating plots using `ggplot2` and are a great foundation for much more complex data visualization in R.
